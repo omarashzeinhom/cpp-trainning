@@ -55,19 +55,36 @@ int main()
     */
 
     int a = 100;
-    cout << a; // 100 
+    cout << a; // 100
 
     cout << "\n===========\n";
 
-    int b, c, d; // Declaring multiple variables with int type
-    a = 10, b = 20, c = 30 , d = 50 ; // Updating Multiple Variables
-    cout << a + b + c;      // 10 + 20 + 30 = 60   - Printing Values with + operator
+    int b, c, d;                    // Declaring multiple variables with int type
+    a = 10, b = 20, c = 30, d = 50; // Updating Multiple Variables
+    cout << a + b + c;              // 10 + 20 + 30 = 60   - Printing Values with + operator
 
     int e, f = 20, g; // Declare variables and value
     e = 20, g = 10;   // updating values for variables without a value
     cout << e + f + g;
 
+    /* Variable Scopes
+        - Global Variable  z
+        - Local Variable   u
+    */
 
+    cout << z; // Since its a global variable it can be accessed everywhere
 
+    int x = 10; // local variable
+
+    cout << x << "= x which is a local variable";
+
+    return 0;
+}
+
+int z = 100; // Global variable
+
+int second()
+{
+    cout << z << "Coming from second function \n";
     return 0;
 }
