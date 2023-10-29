@@ -88,3 +88,38 @@ int second()
     cout << z << "Coming from second function \n";
     return 0;
 }
+
+/*
+    Constant Variable
+        - Read Only Value
+        - Can't Declare without value
+
+*/
+
+int third()
+{
+    int month = 4;     // Changeable
+    const int day = 1; // Cannot be changed
+    cout << "\n Salary is presented at " << day << "st Day";
+    cout << "\n This is month no" << month;
+    return 0;
+}
+
+int ageCalculator()
+{
+    cout << "--------------------------------------------\n";
+    cout << "-------------Calculate Age App ------------\n";
+    cout << "--------------------------------------------\n";
+
+    int age;
+    cin >> age; // cin for Input
+    cout << age;
+
+    int age_in_days = age * 365;
+    int age_in_hours = age_in_days * 24;
+
+    cout << "Age in Days: " << age_in_days << "Days \n";
+    cout << "Age in Hours: " << age_in_hours << "Hours \n";
+
+    return 0;
+}
